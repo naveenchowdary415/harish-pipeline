@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage ("source code pull stages") {
+            steps {
+                echo "this is the first stage , source codeing pulling"
+            }
+        }
+        stage ("code scan stage") {
+            steps {
+                echo "code scanning stages, this is the secon"
+            }
+        }
+    } 
+}
